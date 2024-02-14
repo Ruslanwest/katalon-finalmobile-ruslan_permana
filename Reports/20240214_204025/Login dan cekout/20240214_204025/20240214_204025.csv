@@ -1,0 +1,26 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+Login dan cekout,,,,14-02-2024 20:40:36,14-02-2024 20:43:42,3m - 5.765s,PASSED
+,,,,,,,
+Test Cases/Login,,,,14-02-2024 20:40:37,14-02-2024 20:42:08,1m - 31.249s,PASSED
+"startApplication(""C:\Users\BRI\Downloads\Advantage+demo+3.2.apk"", true)",,,,14-02-2024 20:40:38,14-02-2024 20:41:45,1m - 6.238s,PASSED
+"tap(findTestObject(""Object Repository/login/android.widget.ImageView""), 0)",,,,14-02-2024 20:41:45,14-02-2024 20:41:47,1.941s,PASSED
+"tap(findTestObject(""Object Repository/login/android.widget.LinearLayout (1)""), 0)",,,,14-02-2024 20:41:47,14-02-2024 20:41:49,2.035s,PASSED
+"setText(findTestObject(""Object Repository/login/android.widget.EditText (1)""), username, 0)",,,,14-02-2024 20:41:49,14-02-2024 20:41:52,2.937s,PASSED
+"setText(findTestObject(""Object Repository/login/android.widget.EditText (2)""), password, 0)",,,,14-02-2024 20:41:52,14-02-2024 20:41:54,2.382s,PASSED
+"tap(findTestObject(""Object Repository/login/android.widget.Button - LOGIN""), 0)",,,,14-02-2024 20:41:54,14-02-2024 20:41:55,1.415s,PASSED
+"verifyElementExist(findTestObject(""cek cart/Text_advantage""), 0)",,,,14-02-2024 20:41:55,14-02-2024 20:41:59,3.914s,PASSED
+closeApplication(),,,,14-02-2024 20:41:59,14-02-2024 20:42:05,6.064s,PASSED
+,,,,,,,
+Test Cases/login_cek_cart_checkout,,,,14-02-2024 20:42:08,14-02-2024 20:43:42,1m - 33.668s,PASSED
+"startApplication(""C:\Users\BRI\Downloads\Advantage+demo+3.2.apk"", true)",,,,14-02-2024 20:42:09,14-02-2024 20:43:05,56.527s,PASSED
+"tap(findTestObject(""Object Repository/login/android.widget.ImageView""), 0)",,,,14-02-2024 20:43:05,14-02-2024 20:43:08,2.436s,PASSED
+"tap(findTestObject(""Object Repository/login/android.widget.LinearLayout (1)""), 0)",,,,14-02-2024 20:43:08,14-02-2024 20:43:09,1.283s,PASSED
+"setText(findTestObject(""Object Repository/login/android.widget.EditText (1)""), username, 0)",,,,14-02-2024 20:43:09,14-02-2024 20:43:12,2.995s,PASSED
+"setText(findTestObject(""Object Repository/login/android.widget.EditText (2)""), password, 0)",,,,14-02-2024 20:43:12,14-02-2024 20:43:14,1.994s,PASSED
+"tap(findTestObject(""Object Repository/login/android.widget.Button - LOGIN""), 0)",,,,14-02-2024 20:43:14,14-02-2024 20:43:15,0.721s,PASSED
+"tap(findTestObject(""cek cart/keranjang""), 0)",,,,14-02-2024 20:43:15,14-02-2024 20:43:20,5.716s,PASSED
+try,,,,14-02-2024 20:43:20,14-02-2024 20:43:29,8.741s,PASSED
+try,,,,14-02-2024 20:43:29,14-02-2024 20:43:35,6.296s,FAILED
+catch (Exception e),,,,14-02-2024 20:43:35,14-02-2024 20:43:36,0.526s,PASSED
+"tap(findTestObject(""Object Repository/shoping/close_order_payment""), 0)",,,,14-02-2024 20:43:36,14-02-2024 20:43:38,2.187s,PASSED
+"verifyElementExist(findTestObject(""cek cart/Text_advantage""), 0)",,,,14-02-2024 20:43:38,14-02-2024 20:43:39,1.320s,PASSED
