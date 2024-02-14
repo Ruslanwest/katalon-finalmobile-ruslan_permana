@@ -29,7 +29,38 @@ Mobile.setText(findTestObject('Object Repository/login/android.widget.EditText (
 
 Mobile.tap(findTestObject('Object Repository/login/android.widget.Button - LOGIN'), 0)
 
-Mobile.verifyElementExist(findTestObject('cek cart/Text_advantage'), 0)
+Mobile.tap(findTestObject('cek cart/keranjang'), 0)
 
-Mobile.closeApplication()
+try  {
+	Mobile.verifyElementExist(findTestObject('Object Repository/cek cart/text_no_items_in_cart'), 0)
+	
+	Mobile.pressBack()
+
+    Mobile.tap(findTestObject('Object Repository/shoping/pilih laptop'), 0)
+
+    Mobile.tap(findTestObject('Object Repository/shoping/hp_chromebook'), 0)
+
+    Mobile.tap(findTestObject('Object Repository/shoping/add_cart'), 0)
+
+    Mobile.tap(findTestObject('cek cart/keranjang'), 0)
+
+    Mobile.tap(findTestObject('Object Repository/shoping/CHECKOUT'), 0) //	Mobile.tap(findTestObject('Object Repository/shoping/keranjang'), 0)
+	
+	} catch (Exception e) {
+		Mobile.tap(findTestObject('Object Repository/shoping/CHECKOUT'), 0)
+		}
+
+//Mobile.tap(findTestObject('Object Repository/shoping/pilih_payment methode'), 0)
+
+//Mobile.setText(findTestObject('Object Repository/shoping/safe_pay_username'), username_safepay, 0)
+
+//Mobile.setText(findTestObject('Object Repository/shoping/safe_pay_password'), password_safepay, 0)
+
+//Mobile.tap(findTestObject('Object Repository/shoping/apply_order_method'), 0)
+
+Mobile.tap(findTestObject('Object Repository/shoping/PAY NOW'), 0)
+
+Mobile.tap(findTestObject('Object Repository/shoping/close_order_payment'), 0)
+
+Mobile.verifyElementExist(findTestObject('cek cart/Text_advantage'), 0)
 
