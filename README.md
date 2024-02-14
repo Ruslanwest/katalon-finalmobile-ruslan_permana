@@ -8,4 +8,6 @@
      ada pengecekan dahulu menggunakan if else, jika ada item di cart maka akan diteruskan hingga pembayaran, jika tidak ada maka akan redirect ke pemilihan barang
      ada pengecekan juga ketika kita sudah menyimpan methode payment maka tidak perlu dilakukan mengisi informasinya
      
-  
+# 3. Sudah dijalankan dengan Test Suites dan berhasil
+# 4. Source code yang sekarang merupakan yang terupdate sehingga bisa dilakukan pull/clone project 
+#Terima kasih
