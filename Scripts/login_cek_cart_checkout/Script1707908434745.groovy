@@ -31,10 +31,10 @@ Mobile.tap(findTestObject('Object Repository/login/android.widget.Button - LOGIN
 
 Mobile.tap(findTestObject('cek cart/keranjang'), 0)
 
-try  {
-	Mobile.verifyElementExist(findTestObject('Object Repository/cek cart/text_no_items_in_cart'), 0)
-	
-	Mobile.pressBack()
+try {
+    Mobile.verifyElementExist(findTestObject('Object Repository/cek cart/text_no_items_in_cart'), 5)
+
+    Mobile.pressBack()
 
     Mobile.tap(findTestObject('Object Repository/shoping/pilih laptop'), 0)
 
@@ -44,21 +44,27 @@ try  {
 
     Mobile.tap(findTestObject('cek cart/keranjang'), 0)
 
-    Mobile.tap(findTestObject('Object Repository/shoping/CHECKOUT'), 0) //	Mobile.tap(findTestObject('Object Repository/shoping/keranjang'), 0)
-	
-	} catch (Exception e) {
-		Mobile.tap(findTestObject('Object Repository/shoping/CHECKOUT'), 0)
-		}
+    Mobile.tap(findTestObject('Object Repository/shoping/CHECKOUT'), 0 //	Mobile.tap(findTestObject('Object Repository/shoping/keranjang'), 0)
+        )
+}
+catch (Exception e) {
+    Mobile.tap(findTestObject('Object Repository/shoping/CHECKOUT'), 0)
+} 
 
-//Mobile.tap(findTestObject('Object Repository/shoping/pilih_payment methode'), 0)
+try {
+    Mobile.verifyElementNotVisible(findTestObject('Object Repository/shoping/user_safepay'), 5)
 
-//Mobile.setText(findTestObject('Object Repository/shoping/safe_pay_username'), username_safepay, 0)
+    Mobile.tap(findTestObject('Object Repository/shoping/pilih_payment methode'), 0)
 
-//Mobile.setText(findTestObject('Object Repository/shoping/safe_pay_password'), password_safepay, 0)
+    Mobile.setText(findTestObject('Object Repository/shoping/safe_pay_username'), username_safepay, 0)
 
-//Mobile.tap(findTestObject('Object Repository/shoping/apply_order_method'), 0)
+    Mobile.setText(findTestObject('Object Repository/shoping/safe_pay_password'), password_safepay, 0)
 
-Mobile.tap(findTestObject('Object Repository/shoping/PAY NOW'), 0)
+    Mobile.tap(findTestObject('Object Repository/shoping/apply_order_method'), 0)
+}
+catch (Exception e) {
+    Mobile.tap(findTestObject('Object Repository/shoping/PAY NOW'), 0)
+} 
 
 Mobile.tap(findTestObject('Object Repository/shoping/close_order_payment'), 0)
 
